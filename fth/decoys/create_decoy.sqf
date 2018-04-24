@@ -8,13 +8,14 @@ private ["_decoy_mkr","_veh","_grp","_driver","_guard"];
 _decoy_mkr = _this select 0;
 
 // Create the decoy vehicle (same type as the object vehicle):
-_veh = fth_veh_object_class createVehicle getMarkerPos _decoy_mkr;
+_veh = fth_veh_decoys_class createVehicle getMarkerPos _decoy_mkr;
 _veh setDir (markerDir _decoy_mkr);
 
 // Ensure the marker is updated as the vehicle moves:
 fth_mkrs_local = fth_mkrs_local + [[_decoy_mkr,_veh]];
 
-// TODO: Add inspection action
+// Add inspection action
+[[_veh, ["Inspect",{hint "MISSION UPDATE\nThis is NOT the target vehicle!";},nil,0,true,false,"","",10]],"addAction",true,true] call BIS_fnc_MP;
 
 // Create a group for the crew of the object vehicle:
 _grp = createGroup resistance;

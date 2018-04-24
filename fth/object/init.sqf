@@ -8,7 +8,8 @@ fth_veh_object setDir (markerDir fth_veh_object_mkr);
 // Ensure the marker is updated as the vehicle moves:
 fth_mkrs_local = fth_mkrs_local + [[fth_veh_object_mkr,fth_veh_object]];
 
-// TODO: Add inspection action
+// Add inspection action
+[[fth_veh_object, ["Inspect",{hint "MISSION UPDATE\nThis is the target vehicle!";},nil,0,true,false,"","",10]],"addAction",true,true] call BIS_fnc_MP;
 
 // Create a group for the crew of the object vehicle:
 fth_grp_object_crew = createGroup resistance;
