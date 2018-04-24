@@ -1,0 +1,495 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=9;
+	class ItemIDProvider
+	{
+		nextID=28;
+	};
+	class MarkerIDProvider
+	{
+		nextID=6;
+	};
+	class Camera
+	{
+		pos[]={7143.8799,27.66,7428.7773};
+		dir[]={-0.17108999,-0.42291096,0.88987637};
+		up[]={-0.07984791,0.90617073,0.41530642};
+		aside[]={0.9820168,-2.3654138e-008,0.18880518};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F_Exp",
+	"A3_Ui_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=2;
+		class Item0
+		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=11183338;
+class ScenarioData
+{
+	author="Fer";
+	class Header
+	{
+		gameType="TDM";
+		minPlayers=1;
+		maxPlayers=32;
+	};
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="None";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="ReviveMode";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="ReviveForceRespawnDelay";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute3
+		{
+			property="ReviveBleedOutDelay";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=300;
+				};
+			};
+		};
+		class Attribute4
+		{
+			property="ReviveMedicSpeedMultiplier";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=3;
+				};
+			};
+		};
+		class Attribute5
+		{
+			property="ReviveDelay";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=30.359859;
+				};
+			};
+		};
+		class Attribute6
+		{
+			property="ReviveUnconsciousStateMode";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=7;
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		briefingName="Fer's Treasure Hunt";
+		overviewText="Recover the object to your repaired and refueled helicopter";
+		resistanceEast=1;
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogBase=250;
+		forecastFogBase=250;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=16;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7129.1738,2.6614389,7471.8477};
+						angles[]={0,1.3299758,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=3;
+					type="B_T_Recon_TL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={4913.9082,2.6919999,8812.8594};
+			name="fth_mkr_veh_object";
+			text="OBJ";
+			type="mil_triangle";
+			colorName="ColorYellow";
+			id=6;
+			atlOffset=-0.00030970573;
+		};
+		class Item2
+		{
+			dataType="Marker";
+			position[]={6080.6338,26.150999,8639.9668};
+			name="fth_mkr_wp_0";
+			text="WP 0";
+			type="mil_box";
+			colorName="ColorPink";
+			a=0.75;
+			b=0.75;
+			id=7;
+			atlOffset=-3.8411579;
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={6092.623,42.801998,9555.6016};
+			name="fth_mkr_wp_1";
+			text="WP 1";
+			type="mil_box";
+			colorName="ColorPink";
+			a=0.75;
+			b=0.75;
+			id=14;
+			atlOffset=-11.531322;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={4342.4399,-0.82300001,8433.1406};
+			name="fth_mkr_wp_2";
+			text="WP 2";
+			type="mil_box";
+			colorName="ColorPink";
+			a=0.75;
+			b=0.75;
+			id=15;
+			atlOffset=-5.763;
+		};
+		class Item5
+		{
+			dataType="Marker";
+			position[]={5341.8589,3.062,8704.4238};
+			name="fth_mkr_wp_3";
+			text="WP 3";
+			type="mil_box";
+			colorName="ColorPink";
+			a=0.75;
+			b=0.75;
+			id=16;
+			atlOffset=-0.42295718;
+		};
+		class Item6
+		{
+			dataType="Marker";
+			position[]={5188.1709,8.1999998,9007.3291};
+			name="fth_mkr_dcy_0";
+			text="DCY 0";
+			type="mil_triangle";
+			colorName="ColorGreen";
+			id=17;
+			atlOffset=-1.1599998;
+		};
+		class Item7
+		{
+			dataType="Marker";
+			position[]={4717.062,3.5020001,8848.7129};
+			name="fth_mkr_dcy_1";
+			text="DCY 1";
+			type="mil_triangle";
+			colorName="ColorGreen";
+			id=18;
+			atlOffset=-0.00040483475;
+		};
+		class Item8
+		{
+			dataType="Marker";
+			position[]={4566.5981,5.7470002,9028.6035};
+			name="fth_mkr_dcy_2";
+			text="DCY 2";
+			type="mil_triangle";
+			colorName="ColorGreen";
+			id=19;
+			atlOffset=-0.093546391;
+		};
+		class Item9
+		{
+			dataType="Marker";
+			position[]={5694.168,30.844,9307.458};
+			name="fth_mkr_dcy_3";
+			text="DCY 3";
+			type="mil_triangle";
+			colorName="ColorGreen";
+			id=20;
+			atlOffset=-0.00037193298;
+		};
+		class Item10
+		{
+			dataType="Marker";
+			position[]={7077.605,2.6600001,7513.0771};
+			name="fth_mkr_spt_0";
+			text="SPT 0";
+			type="mil_triangle";
+			colorName="ColorOrange";
+			id=22;
+		};
+		class Item11
+		{
+			dataType="Marker";
+			position[]={7086.8862,2.6600001,7479.8232};
+			name="fth_mkr_spt_1";
+			text="SPT 1";
+			type="mil_triangle";
+			colorName="ColorOrange";
+			angle=265.452;
+			id=23;
+		};
+		class Item12
+		{
+			dataType="Marker";
+			position[]={7082.7178,2.6600001,7441.4731};
+			name="fth_mkr_spt_2";
+			text="SPT 2";
+			type="mil_triangle";
+			colorName="ColorOrange";
+			angle=230.619;
+			id=24;
+		};
+		class Item13
+		{
+			dataType="Marker";
+			position[]={7147.7441,2.6600001,7514.8379};
+			name="fth_mkr_spt_3";
+			text="SPT 3";
+			type="mil_triangle";
+			colorName="ColorOrange";
+			angle=179.47696;
+			id=25;
+		};
+		class Item14
+		{
+			dataType="Marker";
+			position[]={7161.083,2.6600001,7469.8198};
+			name="fth_mkr_spt_4";
+			text="SPT 4";
+			type="mil_triangle";
+			colorName="ColorOrange";
+			angle=91.577972;
+			id=26;
+		};
+		class Item15
+		{
+			dataType="Marker";
+			position[]={7160.25,1.6289999,7438.9722};
+			name="fth_mkr_spt_5";
+			text="SPT 5";
+			type="mil_triangle";
+			colorName="ColorOrange";
+			angle=142.028;
+			id=27;
+			atlOffset=-1.0310001;
+		};
+	};
+};
