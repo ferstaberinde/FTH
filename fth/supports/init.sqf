@@ -37,5 +37,5 @@ while {_i > 0} do {
 
 // Delete unused markers:
 {
-	deleteMarker _x;
+	[_x] remoteExec ["deleteMarkerLocal"];
 } forEach fth_veh_supports_mkrs;

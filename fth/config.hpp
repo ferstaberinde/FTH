@@ -87,22 +87,14 @@ The groups, vehicle types and possible starting locations for players.
 
 | VARIABLE             | DESCRIPTION
 |======================|============ 
-| fth_veh_th_blu_class | Class of vehicle used for the BLUFOR helicopter
-| fth_veh_th_opf_class | Class of vehicle used for the OPFOR helicopter
 | fth_veh_th_blu_mkrs  | Names of the markers where the BLUFOR helicopter may spawn
 | fth_veh_th_opf_mkrs  | Names of the markers where the OPFOR helicopter may spawn
 | fth_grps_blu_inf     | The BLUFOR infantry groups
-| fth_grps_blu_th      | The BLUFOR helicopter pilots group (should be 1 group of 2 pilots)
 | fth_grps_opf_inf     | The OPFOR infantry groups
-| fth_grps_opf_th      | The OPFOR helicopter pilots group (should be 1 group of 2 pilots)
 
 */
 
-fth_veh_th_blu_class = "B_Heli_Transport_03_unarmed_F";
-fth_veh_th_opf_class = "O_Heli_Transport_04_covered_F";
 fth_veh_th_blu_mkrs = ["fth_mkr_th_blu_0","fth_mkr_th_blu_1","fth_mkr_th_blu_2","fth_mkr_th_blu_3","fth_mkr_th_blu_4","fth_mkr_th_blu_5","fth_mkr_th_blu_6","fth_mkr_th_blu_7"];
 fth_veh_th_opf_mkrs = ["fth_mkr_th_opf_0","fth_mkr_th_opf_1","fth_mkr_th_opf_2","fth_mkr_th_opf_3","fth_mkr_th_opf_4","fth_mkr_th_opf_5","fth_mkr_th_opf_6","fth_mkr_th_opf_7"];
 fth_grps_blu_inf = [fth_grp_blu_asl,fth_grp_blu_a1,fth_grp_blu_a2,fth_grp_blu_a3];
-fth_grps_blu_th = fth_grp_blu_th1;
 fth_grps_opf_inf = [fth_grp_opf_asl,fth_grp_opf_a1,fth_grp_opf_a2,fth_grp_opf_a3];
-fth_grps_opf_th = fth_grp_opf_th1;

@@ -33,9 +33,11 @@ These inits are run on all machines.
 | INIT               | DESCRIPTION
 |====================|============ 
 | _init_markers      | Initialises markers system
+| _init_player       | Initiates player-specific (locally-driven) settings
 
 */
 
 _init_markers = execVM "fth\markers\init.sqf";
+_init_player = execVM "fth\players\player.sqf";
 // TODO: Initiate friendly markers.
 // TODO: Initiate enemy intel markers
