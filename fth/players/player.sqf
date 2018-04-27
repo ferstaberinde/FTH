@@ -11,8 +11,8 @@ switch (side player) do {
 					null = ["east","colorRed",fth_mkrs_enemy_local_delay] execVM "fth\markers\local_unit_markers.sqf";
 				}; 
 	case east : {
-					null = ["east","colorRed",fth_mkrs_local_delay] execVM "fth\markers\local_unit_markers.sqf";
-					null = ["west","colorBlue",fth_mkrs_enemy_local_delay] execVM "fth\markers\local_unit_markers.sqf";
+					null = ["east","colorBlue",fth_mkrs_local_delay] execVM "fth\markers\local_unit_markers.sqf";
+					null = ["west","colorRed",fth_mkrs_enemy_local_delay] execVM "fth\markers\local_unit_markers.sqf";
 				};
 	case resistance : {
 					null = ["east","colorRed",fth_mkrs_local_delay] execVM "fth\markers\local_unit_markers.sqf";
@@ -23,3 +23,8 @@ switch (side player) do {
 // Return the map to players:
 player addItem "itemMap";
 player assignItem "itemMap";
+
+// Set up the player's detector:
+fth_dct_mkr setMarkerSizeLocal [0,0];
+fth_dct_mkr setMarkerPosLocal [0,0];
+player addAction ["Take Reading","fth\players\detector.sqf"];

@@ -100,3 +100,20 @@ fth_veh_th_blu_mkrs = ["fth_mkr_th_blu_0","fth_mkr_th_blu_1","fth_mkr_th_blu_2",
 fth_veh_th_opf_mkrs = ["fth_mkr_th_opf_0","fth_mkr_th_opf_1","fth_mkr_th_opf_2","fth_mkr_th_opf_3","fth_mkr_th_opf_4","fth_mkr_th_opf_5","fth_mkr_th_opf_6","fth_mkr_th_opf_7"];
 fth_grps_blu_inf = [fth_grp_blu_asl,fth_grp_blu_a1,fth_grp_blu_a2,fth_grp_blu_a3];
 fth_grps_opf_inf = [fth_grp_opf_asl,fth_grp_opf_a1,fth_grp_opf_a2,fth_grp_opf_a3];
+
+/* DETECTOR
+The effective distance and processing time for the detector that players use to locate the object vehicle.
+
+| VARIABLE       | DESCRIPTION
+|================|============ 
+| fth_dct_mkr    | Name of the marker used (locally) to indicate the distance to the object vehicle
+| fth_dct_range  | Maximum range (in metres) at which the object vehicle can be detected
+| fth_dct_time   | Time (in seconds) required to take a reading
+| fth_dct_fade   | Time (in seconds) before marker is reset on the player's map after a reading 
+
+*/
+
+fth_dct_mkr = "mkr_dct";
+fth_dct_range = 5000;
+fth_dct_time = 60;
+fth_dct_fade = 60;
