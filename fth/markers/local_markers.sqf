@@ -14,5 +14,5 @@ while {true} do {
 		_mkr setMarkerDirLocal (direction _entity);
 	} forEach fth_mkrs_local;
 
-	sleep fth_mkrs_local_update;
+	sleep fth_mkrs_local_delay;
 };

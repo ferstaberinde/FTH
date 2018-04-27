@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=159;
+		nextID=163;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7270.2974,62.041363,6991.123};
-		dir[]={-0.38300538,-0.45515344,0.80389953};
-		up[]={-0.19577652,0.89039832,0.41091987};
-		aside[]={0.90283102,4.5744673e-007,0.43014202};
+		pos[]={6688.3691,125.67777,7372.5693};
+		dir[]={0.88075387,-0.44876146,0.15184981};
+		up[]={0.44226986,0.89362514,0.07625109};
+		aside[]={0.16992013,1.7616549e-007,-0.98554534};
 	};
 };
 binarizationWanted=0;
@@ -28,13 +28,14 @@ addons[]=
 	"A3_Ui_F",
 	"A3_Characters_F_Exp",
 	"A3_Air_F_Heli_Heli_Transport_03",
-	"A3_Air_F_Heli_Heli_Transport_04"
+	"A3_Air_F_Heli_Heli_Transport_04",
+	"A3_Characters_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -56,6 +57,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item3
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=11183338;
@@ -66,7 +74,7 @@ class ScenarioData
 	{
 		gameType="TDM";
 		minPlayers=1;
-		maxPlayers=32;
+		maxPlayers=30;
 	};
 };
 class CustomAttributes
@@ -233,7 +241,7 @@ class Mission
 	{
 		briefingName="Fer's Treasure Hunt";
 		overviewText="Recover the object to your repaired and refueled helicopter";
-		resistanceEast=1;
+		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;
@@ -254,7 +262,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=43;
+		items=45;
 		class Item0
 		{
 			dataType="Marker";
@@ -1641,7 +1649,7 @@ class Mission
 					};
 					id=82;
 					type="O_T_Soldier_SL_F";
-					atlOffset=-0.00044202805;
+					atlOffset=-0.053695679;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3054,7 +3062,7 @@ class Mission
 					};
 					id=156;
 					type="O_T_Helicrew_F";
-					atlOffset=-8.7976456e-005;
+					atlOffset=-0.053695679;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3361,6 +3369,226 @@ class Mission
 			id=158;
 			type="O_Heli_Transport_04_covered_F";
 			atlOffset=-0.00044202805;
+		};
+		class Item43
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6860.2891,2.6614389,7299.3047};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						description="Game Marshal 1";
+						isPlayable=1;
+					};
+					id=160;
+					type="I_officer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=159;
+		};
+		class Item44
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6857.2642,2.6614389,7299.498};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						description="Game Marshal 2";
+						isPlayable=1;
+					};
+					id=162;
+					type="I_officer_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=161;
 		};
 	};
 };
