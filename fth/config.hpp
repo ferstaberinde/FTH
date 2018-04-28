@@ -84,6 +84,19 @@ fth_veh_supports_repair_class = "C_Truck_02_box_F";
 fth_veh_supports_mkrs = ["fth_mkr_spt_0","fth_mkr_spt_1","fth_mkr_spt_2","fth_mkr_spt_3","fth_mkr_spt_4","fth_mkr_spt_5"];
 fth_veh_supports_type_count = 2;
 
+/* TRAFFIC
+Civilian vehicles that drive around the island. And get car-jacked by players.
+
+| VARIABLE            | DESCRIPTION
+|=====================|============ 
+| fth_veh_res_classes | Classes of vehicles used for the resistance vehicles
+| fth_veh_civ_classes | Classes of vehicles used for the civilian vehicles
+
+*/
+
+fth_veh_res_classes = [];
+fth_veh_civ_classes = [];
+
 /* PLAYERS
 The groups, vehicle types and possible starting locations for players.
 

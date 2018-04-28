@@ -25,6 +25,7 @@ These inits are ONLY run on the server.
 | _init_object       | Initialise object vehicle and crew
 | _init_decoys       | Initialises the decoy vehicles
 | _init_supports     | Initialises the support vehicles
+| _init_civs         | Initialises the civlian vehicles
 | _init_players      | Initialises the player units and vehicles
 
 */
@@ -35,6 +36,7 @@ if (isServer) then {
 	_init_object = execVM "fth\object\init.sqf";
 	_init_decoys = execVM "fth\decoys\init.sqf";
 	_init_supports = execVM "fth\supports\init.sqf";
+	_init_civs = execVM "fth\civs\init.sqf";
 	_init_players = execVM "fth\players\init.sqf";
 
 };
