@@ -19,3 +19,17 @@ while {_i != 0} do {
 	_i = _i - 1;
 };
 _locs_civ = _locs;
+
+// Initiate the creation of the military vehicles:
+_i = 0;
+{
+	null = [_x,"M",_i] execVM "fth\traffic\create_traffic.sqf";
+	_i = _i + 1;
+} forEach _locs_mil;
+
+// Initiate the creation of the civilan vehicles:
+_i = 0;
+{
+	null = [_x,"C",_i] execVM "fth\traffic\create_traffic.sqf";
+	_i = _i + 1;
+} forEach _locs_civ;

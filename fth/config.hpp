@@ -48,11 +48,11 @@ The object is the vehicle all player teams are trying to capture.
 */
 
 fth_veh_object_mkr = "fth_mkr_veh_object";
-fth_veh_object_class = "I_Truck_02_covered_F";
-fth_veh_object_crew_class = "I_Soldier_lite_F";
+fth_veh_object_class = "C_Truck_02_covered_F";
+fth_veh_object_crew_class = "I_C_Soldier_Para_3_F";
 fth_veh_object_wp_mkrs = ["fth_mkr_wp_0","fth_mkr_wp_1","fth_mkr_wp_2","fth_mkr_wp_3"];
-fth_veh_object_wp_max_rad = 100;
-fth_veh_object_wp_timeout = [5,10,15];
+fth_veh_object_wp_max_rad = 300;
+fth_veh_object_wp_timeout = [60,120,180];
 
 /* DECOYS
 The decoys look and behave exactly like the object vehicle.
@@ -87,15 +87,19 @@ fth_veh_supports_type_count = 2;
 /* TRAFFIC
 Civilian vehicles that drive around the island. And get car-jacked by players.
 
-| VARIABLE            | DESCRIPTION
-|=====================|============ 
-| fth_veh_res_classes | Classes of vehicles used for the resistance vehicles
-| fth_veh_civ_classes | Classes of vehicles used for the civilian vehicles
+| VARIABLE                 | DESCRIPTION
+|==========================|============ 
+| fth_veh_res_classes      | Classes of vehicles used for the resistance vehicles
+| fth_veh_res_crew_classes | Class of crew used for the resistance vehicles
+| fth_veh_civ_classes      | Classes of vehicles used for the civilian vehicles
+| fth_veh_civ_crew_classes | Class of crew used for the civilian vehicles
 
 */
 
-fth_veh_res_classes = [];
-fth_veh_civ_classes = [];
+fth_veh_res_classes = ["I_C_Offroad_02_LMG_F","I_G_Offroad_01_armed_F"];
+fth_veh_res_crew_classes = ["I_C_Soldier_Para_3_F","I_C_Soldier_Para_7_F","I_C_Soldier_Bandit_2_F","I_C_Soldier_Bandit_4_F"];
+fth_veh_civ_classes = ["C_Offroad_01_F","C_SUV_01_F","C_Van_01_box_F","C_Offroad_02_unarmed_F","C_Hatchback_01_F","C_Truck_02_covered_F"];
+fth_veh_civ_crew_classes = ["C_man_p_shorts_1_F","C_man_p_fugitive_F","C_man_polo_6_F","C_man_polo_5_F","C_man_polo_4_F","C_man_polo_1_F"];
 
 /* PLAYERS
 The groups, vehicle types and possible starting locations for players.
@@ -127,6 +131,6 @@ The effective distance and processing time for the detector that players use to 
 */
 
 fth_dct_mkr = "mkr_dct";
-fth_dct_range = 5000;
-fth_dct_time = 60;
-fth_dct_fade = 60;
+fth_dct_range = 2000;
+fth_dct_time = 30;
+fth_dct_fade = 120;
