@@ -35,4 +35,4 @@ _guard assignAsCargo _veh;
 _guard moveInCargo _veh;
 
 // Initiate the object movement script
-_nul = [_grp,""] execVM "fth\object\movement.sqf";
+_null = [_grp,""] execVM "fth\object\movement.sqf";

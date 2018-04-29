@@ -21,15 +21,16 @@ switch (_side) do {
 
 // Create the marker and ensure it is updated as the vehicle moves:
 _veh_mkrName = format ["%1_%2",_side,_number];
-_veh_mkr = createMarkerLocal [_veh_mkrName, getMarkerPos _wp_mkr];
-_veh_mkrName setMarkerTypeLocal "mil_triangle";
-_veh_mkrName setMarkerTextLocal format ["%1 %2",_side,_number];
+_veh_mkr = createMarker [_veh_mkrName, getMarkerPos _wp_mkr];
+_veh_mkrName setMarkerType "mil_triangle";
+_veh_mkrName setMarkerText format ["%1 %2",_side,_number];
+_veh_mkrName setMarkerAlpha 0;
 switch (_side) do { 
 	case "M" : {
-		_veh_mkrName setMarkerColorLocal "colorGreen";
+		_veh_mkrName setMarkerColor "colorGreen";
 	}; 
 	case "C" : {
-		_veh_mkrName setMarkerColorLocal "colorBlack";
+		_veh_mkrName setMarkerColor "colorBlack";
 	};
 };
 fth_mkrs_local = fth_mkrs_local + [[_veh_mkr,_veh]];
@@ -70,4 +71,4 @@ switch (_side) do {
 };
 
 // Initiate the object movement script
-_nul = [_grp,_wp_mkr] execVM "fth\object\movement.sqf";
+_null = [_grp,_wp_mkr] execVM "fth\object\movement.sqf";

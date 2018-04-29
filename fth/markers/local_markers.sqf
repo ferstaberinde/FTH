@@ -10,6 +10,7 @@ while {true} do {
 	{
 		_mkr = _x select 0;
 		_entity = _x select 1;
+		_mkr setMarkerAlphaLocal 1;
 		_mkr setMarkerPosLocal (getPosATL _entity);
 		_mkr setMarkerDirLocal (direction _entity);
 	} forEach fth_mkrs_local;
