@@ -25,13 +25,23 @@ fth_mkrs_enemy_local_delay = 60;
 /* RESISTANCE
 The Resistance (Independent) is the AI-controlled side all player teams are fighting.
 
-| VARIABLE             | DESCRIPTION
-|======================|============          
-| fth_side_res_skill   | Default skill for units on the Resistance (Independent) side
+| VARIABLE                      | DESCRIPTION
+|===============================|============          
+| fth_side_res_skill            | Default skill for units on the Resistance (Independent) side
+| fth_veh_supports_pat_classes  | Class of troops used for the patrols around the support vehicles
+| fth_veh_supports_pat_min      | Minimum number of troops in a patrol
+| fth_veh_supports_pat_max      | Maximum number of troops in a patrol
+| fth_veh_supports_pat_gaps     | Distance (in meters) between waypoints of each patrol
+| fth_veh_supports_pat_mkrs     | Empty arrary that will be populated and used by the patrol groups system (DO NOT EDIT)
 
 */
 
 fth_side_res_skill = 0.5;
+fth_veh_supports_pat_classes = ["I_C_Soldier_Para_3_F","I_C_Soldier_Para_7_F","I_C_Soldier_Bandit_2_F","I_C_Soldier_Bandit_4_F"];
+fth_veh_supports_pat_min = 3;
+fth_veh_supports_pat_max = 7;
+fth_veh_supports_pat_gaps = 150;
+fth_veh_supports_pat_mkrs = []; // DO NOT EDIT
 
 /* OBJECT
 The object is the vehicle all player teams are trying to capture.
@@ -134,3 +144,5 @@ fth_dct_mkr = "mkr_dct";
 fth_dct_range = 2000;
 fth_dct_time = 30;
 fth_dct_fade = 120;
+
+// END

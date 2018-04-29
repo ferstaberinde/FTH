@@ -29,4 +29,5 @@ if (isServer) then {
 };
 if (side player in fth_mkrs_admin_sides) then {
 	null = [] execVM "fth\markers\local_markers.sqf";
+	null = [] execVM "fth\markers\local_patrol_markers.sqf";
 };

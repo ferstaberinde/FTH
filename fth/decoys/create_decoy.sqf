@@ -4,7 +4,7 @@
 // Declare local variables:
 private ["_decoy_mkr","_veh","_grp","_driver","_guard"];
 
-// Populate some local variable using variables in the master FTH config:
+// Populate some local variables using values passed to the script:
 _decoy_mkr = _this select 0;
 
 // Create the decoy vehicle (same type as the object vehicle):
