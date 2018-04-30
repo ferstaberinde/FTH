@@ -8,7 +8,7 @@ private ["_spt_mkr","_grp","_delta","_extra","_soldier","_i","_grp_mkrName","_gr
 _spt_mkr = _this select 0;
 
 // Calculate size of the patrol:
-_delta = floor ((fth_veh_supports_pat_max - fth_veh_supports_pat_min) / 2);
+_delta = floor ((fth_veh_supports_pat_max - fth_veh_supports_pat_min));
 _extra = floor random _delta;
 
 // Create a group for the patrol:

@@ -4,6 +4,6 @@
 // At regular intervals the server will broadcast its array of markers for game marshalls to see as well:
 while {true} do {
 	publicVariable "fth_mkrs_local";
-	publicVariable "fth_veh_supports_pat_grps";
+	publicVariable "fth_veh_supports_pat_mkrs";
 	sleep fth_mkrs_public_update;
 };

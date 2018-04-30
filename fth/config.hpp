@@ -38,8 +38,8 @@ The Resistance (Independent) is the AI-controlled side all player teams are figh
 
 fth_side_res_skill = 0.5;
 fth_veh_supports_pat_classes = ["I_C_Soldier_Para_3_F","I_C_Soldier_Para_7_F","I_C_Soldier_Bandit_2_F","I_C_Soldier_Bandit_4_F"];
-fth_veh_supports_pat_min = 3;
-fth_veh_supports_pat_max = 7;
+fth_veh_supports_pat_min = 2;
+fth_veh_supports_pat_max = 5;
 fth_veh_supports_pat_gaps = 150;
 fth_veh_supports_pat_mkrs = []; // DO NOT EDIT
 
