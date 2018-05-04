@@ -1,0 +1,62 @@
+// ============================================================================================
+
+// F3 - Briefing Template (edited for FER'S TREASURE HUNT)
+// Credits: BIS - Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Ending #1";
+		subtitle = "";
+		description = "*** Insert debriefing #1 here. ***";
+	};
+
+	class End2
+	{
+		title = "Ending #2";
+		subtitle = "";
+		description = "*** Insert debriefing #2 here. ***";
+	};
+
+	class End3
+	{
+		title = "Ending #3";
+		subtitle = "";
+		description = "*** Insert debriefing #3 here. ***";
+	};
+
+	class End4
+	{
+		title = "Ending #4";
+		subtitle = "";
+		description = "*** Insert debriefing #4 here. ***";
+	};
+
+	class End5
+	{
+		title = "Ending #5";
+		subtitle = "";
+		description = "*** Insert debriefing #5 here. ***";
+	};
+
+	class End6
+	{
+		title = "Ending #6";
+		subtitle = "";
+		description = "*** Insert debriefing #6 here. ***";
+	};
+
+};
+
+// ============================================================================================
+
+// F3 - Functions (edited for FER'S TREASURE HUNT)
+// DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
+
+class CfgFunctions
+{
+	#include "f\common\functions.hpp"
+};
+
+// ============================================================================================
