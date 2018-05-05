@@ -3,6 +3,7 @@
 
 // Create the object vehicle: 
 fth_veh_object = fth_veh_object_class createVehicle getMarkerPos fth_veh_object_mkr;
+publicVariable "fth_veh_object";
 fth_veh_object setDir (markerDir fth_veh_object_mkr);
 
 // Ensure the marker is updated as the vehicle moves:

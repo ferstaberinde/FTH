@@ -17,10 +17,10 @@ A dynamic markers system is implemented in full for admins, and in restricted fo
 
 fth_mkrs_local = []; // DO NOT EDIT
 fth_mkrs_admin_sides = [west,resistance,east];
-fth_mkrs_delay = 10;
+fth_mkrs_delay = 15;
 fth_mkrs_public_update = 60;
-fth_mkrs_local_delay = 5;
-fth_mkrs_enemy_local_delay = 60;
+fth_mkrs_local_delay = 15;
+fth_mkrs_enemy_local_delay = 180;
 
 /* RESISTANCE
 The Resistance (Independent) is the AI-controlled side all player teams are fighting.
@@ -62,7 +62,7 @@ fth_veh_object_class = "C_Truck_02_covered_F";
 fth_veh_object_crew_class = "I_C_Soldier_Para_3_F";
 fth_veh_object_wp_mkrs = ["fth_mkr_wp_0","fth_mkr_wp_1","fth_mkr_wp_2","fth_mkr_wp_3","fth_mkr_wp_4","fth_mkr_wp_5","fth_mkr_wp_6","fth_mkr_wp_7","fth_mkr_wp_8","fth_mkr_wp_9","fth_mkr_wp_10","fth_mkr_wp_11","fth_mkr_wp_12","fth_mkr_wp_13","fth_mkr_wp_14"];
 fth_veh_object_wp_max_rad = 300;
-fth_veh_object_wp_timeout = [60,120,180];
+fth_veh_object_wp_timeout = [60,90,120];
 
 /* DECOYS
 The decoys look and behave exactly like the object vehicle.
@@ -92,7 +92,7 @@ The support vehicles are parked fuel and repair trucks that the players must obt
 fth_veh_supports_fuel_class = "C_Truck_02_fuel_F";
 fth_veh_supports_repair_class = "C_Truck_02_box_F";
 fth_veh_supports_mkrs = ["fth_mkr_spt_0","fth_mkr_spt_1","fth_mkr_spt_2","fth_mkr_spt_3","fth_mkr_spt_4","fth_mkr_spt_5","fth_mkr_spt_6","fth_mkr_spt_7","fth_mkr_spt_8","fth_mkr_spt_9","fth_mkr_spt_10","fth_mkr_spt_11","fth_mkr_spt_12","fth_mkr_spt_13","fth_mkr_spt_14"];
-fth_veh_supports_type_count = 2;
+fth_veh_supports_type_count = 3;
 
 /* TRAFFIC
 Civilian vehicles that drive around the island. And get car-jacked by players.
@@ -142,7 +142,7 @@ The effective distance and processing time for the detector that players use to 
 
 fth_dct_mkr = "mkr_dct";
 fth_dct_range = 2000;
-fth_dct_time = 30;
+fth_dct_time = 15;
 fth_dct_fade = 120;
 
 /* VICTORY CONDITIONS
