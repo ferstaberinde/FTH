@@ -27,6 +27,7 @@ These inits are ONLY run on the server.
 | _init_supports     | Initialises the support vehicles
 | _init_traffic      | Initialises the military and civlian vehicle traffic 
 | _init_players      | Initialises the player units and vehicles
+| _init_victory      | Initialises the victory conditions monitor(s)
 
 */
 
@@ -38,6 +39,7 @@ if (isServer) then {
 	_init_supports = execVM "fth\supports\init.sqf";
 	_init_traffic = execVM "fth\traffic\init.sqf";
 	_init_players = execVM "fth\players\init.sqf";
+	_init_victory = execVM "fth\victory\init.sqf";
 
 };
 

@@ -7,37 +7,37 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "Ending #1";
+		title = "OPFOR VICTORY";
 		subtitle = "";
-		description = "*** Insert debriefing #1 here. ***";
+		description = "The OPFOR team successfully extracted the device.";
 	};
 
 	class End2
 	{
-		title = "Ending #2";
+		title = "BLUFOR VICTORY";
 		subtitle = "";
-		description = "*** Insert debriefing #2 here. ***";
+		description = "The BLUFOR team successfully extracted the device.";
 	};
 
 	class End3
 	{
-		title = "Ending #3";
+		title = "OPFOR DEFEAT";
 		subtitle = "";
-		description = "*** Insert debriefing #3 here. ***";
+		description = "The OPFOR team was eliminated and / or its helicopter was destroyed.";
 	};
 
 	class End4
 	{
-		title = "Ending #4";
+		title = "BLUFOR DEFEAT";
 		subtitle = "";
-		description = "*** Insert debriefing #4 here. ***";
+		description = "The BLUFOR team was eliminated and / or its helicopter was destroyed.";
 	};
 
 	class End5
 	{
-		title = "Ending #5";
+		title = "STALEMATE";
 		subtitle = "";
-		description = "*** Insert debriefing #5 here. ***";
+		description = "The device was destroyed before either team could successfully extract it.";
 	};
 
 	class End6

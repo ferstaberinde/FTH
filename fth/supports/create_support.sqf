@@ -21,4 +21,4 @@ _text = format ["%1 %2",(markerText _spt_mkr),_type];
 _spt_mkr setMarkerText _text;
 
 // Create patrol around the vehicle:
-null = [_spt_mkr] execVM "fth\resistance\create_patrol.sqf";
+dSnull = [_spt_mkr] execVM "fth\resistance\create_patrol.sqf";

@@ -1,5 +1,5 @@
 // TRAFFIC - INIT
-// =================
+// ==============
 
 // Declare local variables:
 private ["_i","_half","_loc","_locs","_locs_mil","_locs_civ"];
