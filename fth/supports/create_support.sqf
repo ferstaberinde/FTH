@@ -20,5 +20,9 @@ _veh setDir (markerDir _spt_mkr);
 _text = format ["%1 %2",(markerText _spt_mkr),_type];
 _spt_mkr setMarkerText _text;
 
+// Ensure the marker position is updated if the vehicle moves:
+fth_mkrs_local = fth_mkrs_local + [[_spt_mkr,_veh]];
+_spt_mkr setMarkerAlpha 0; // Hide marker globally (it will be un-hidden by local markers script)
+
 // Create patrol around the vehicle:
 dSnull = [_spt_mkr] execVM "fth\resistance\create_patrol.sqf";

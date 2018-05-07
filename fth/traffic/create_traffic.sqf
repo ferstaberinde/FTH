@@ -24,7 +24,7 @@ _veh_mkrName = format ["%1_%2",_side,_number];
 _veh_mkr = createMarker [_veh_mkrName, getMarkerPos _wp_mkr];
 _veh_mkrName setMarkerType "mil_triangle";
 _veh_mkrName setMarkerText format ["%1 %2",_side,_number];
-_veh_mkrName setMarkerAlpha 0;
+_veh_mkrName setMarkerAlpha 0; // Hide marker globally (it will be un-hidden by local markers script)
 switch (_side) do { 
 	case "M" : {
 		_veh_mkrName setMarkerColor "colorGreen";

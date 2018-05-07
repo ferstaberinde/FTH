@@ -20,6 +20,9 @@ if (!(side player in fth_mkrs_admin_sides)) then {
 	{_x setMarkerAlphaLocal 0} forEach fth_veh_th_blu_mkrs;
 	{_x setMarkerAlphaLocal 0} forEach fth_veh_th_opf_mkrs;
 
+	// Hides the markers used to place the parked vehicles
+	{_x setMarkerAlphaLocal 0} forEach fth_veh_civ_pv_mkrs;
+
 };
 
 // Wait N seconds (defined in FTH master config) and then start broadcasting markers from server and start the local markers script for admins:
