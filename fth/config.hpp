@@ -16,7 +16,7 @@ A dynamic markers system is implemented in full for admins, and in restricted fo
 */
 
 fth_mkrs_local = []; // DO NOT EDIT
-fth_mkrs_admin_sides = [west,resistance,east];
+fth_mkrs_admin_sides = [resistance];
 fth_mkrs_delay = 15;
 fth_mkrs_public_update = 60;
 fth_mkrs_local_delay = 15;
@@ -95,7 +95,7 @@ fth_veh_supports_mkrs = ["fth_mkr_spt_0","fth_mkr_spt_1","fth_mkr_spt_2","fth_mk
 fth_veh_supports_type_count = 3;
 
 /* TRAFFIC
-Civilian vehicles that drive around the island. And get car-jacked by players.
+Civilian vehicles that drive around the island. And get car-jacked by players. There are also some parked vehicles.
 
 | VARIABLE                 | DESCRIPTION
 |==========================|============ 
@@ -103,6 +103,7 @@ Civilian vehicles that drive around the island. And get car-jacked by players.
 | fth_veh_res_crew_classes | Class of crew used for the resistance vehicles
 | fth_veh_civ_classes      | Classes of vehicles used for the civilian vehicles
 | fth_veh_civ_crew_classes | Class of crew used for the civilian vehicles
+| fth_veh_civ_parked_mkrs  | Names of the markers where each parked civilian vehicle spawns (1 per marker listed)
 
 */
 
@@ -110,6 +111,7 @@ fth_veh_res_classes = ["I_C_Offroad_02_LMG_F","I_G_Offroad_01_armed_F"];
 fth_veh_res_crew_classes = ["I_C_Soldier_Para_3_F","I_C_Soldier_Para_7_F","I_C_Soldier_Bandit_2_F","I_C_Soldier_Bandit_4_F"];
 fth_veh_civ_classes = ["C_Offroad_01_F","C_SUV_01_F","C_Van_01_box_F","C_Offroad_02_unarmed_F","C_Hatchback_01_F","C_Truck_02_covered_F"];
 fth_veh_civ_crew_classes = ["C_man_p_shorts_1_F","C_man_p_fugitive_F","C_man_polo_6_F","C_man_polo_5_F","C_man_polo_4_F","C_man_polo_1_F"];
+fth_veh_civ_pv_mkrs = ["fth_mkr_pv_0","fth_mkr_pv_1","fth_mkr_pv_2","fth_mkr_pv_3","fth_mkr_pv_4","fth_mkr_pv_5","fth_mkr_pv_6","fth_mkr_pv_7","fth_mkr_pv_8","fth_mkr_pv_9"];
 
 /* PLAYERS
 The groups, vehicle types and possible starting locations for players.
@@ -142,7 +144,7 @@ The effective distance and processing time for the detector that players use to 
 
 fth_dct_mkr = "mkr_dct";
 fth_dct_range = 2000;
-fth_dct_time = 15;
+fth_dct_time = 30;
 fth_dct_fade = 120;
 
 /* VICTORY CONDITIONS

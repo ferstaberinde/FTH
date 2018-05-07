@@ -33,3 +33,8 @@ _i = 0;
 	null = [_x,"C",_i] execVM "fth\traffic\create_traffic.sqf";
 	_i = _i + 1;
 } forEach _locs_civ;
+
+// Initiate the creation of the parked civilan vehicles:
+{
+	null = [_x] execVM "fth\traffic\create_parked.sqf";
+} forEach fth_veh_civ_pv_mkrs;
