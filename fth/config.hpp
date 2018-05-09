@@ -62,7 +62,7 @@ fth_veh_object_class = "C_Truck_02_covered_F";
 fth_veh_object_crew_class = "I_C_Soldier_Para_3_F";
 fth_veh_object_wp_mkrs = ["fth_mkr_wp_0","fth_mkr_wp_1","fth_mkr_wp_2","fth_mkr_wp_3","fth_mkr_wp_4","fth_mkr_wp_5","fth_mkr_wp_6","fth_mkr_wp_7","fth_mkr_wp_8","fth_mkr_wp_9","fth_mkr_wp_10","fth_mkr_wp_11","fth_mkr_wp_12","fth_mkr_wp_13","fth_mkr_wp_14"];
 fth_veh_object_wp_max_rad = 300;
-fth_veh_object_wp_timeout = [60,90,120];
+fth_veh_object_wp_timeout = [120,180,240];
 
 /* DECOYS
 The decoys look and behave exactly like the object vehicle.
@@ -144,7 +144,7 @@ The effective distance and processing time for the detector that players use to 
 
 fth_dct_mkr = "mkr_dct";
 fth_dct_range = 2000;
-fth_dct_time = 30;
+fth_dct_time = 10;
 fth_dct_fade = 120;
 
 /* VICTORY CONDITIONS

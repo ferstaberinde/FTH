@@ -1,14 +1,6 @@
 // FER'S TREASURE HUNT MASTER INIT
 // ===============================
 
-/* REMOVE MAP
-At the start of the mission, we remove the map from all players. This will be re-enabled later, when the set-up is complete.
-
-*/
-
-player unassignItem "itemMap";
-player removeItem "itemMap";
-
 /* PAUSE BEFORE SET-UP STARTS
 This sleep ensures the rest of the set-up of the mission occurs at the appropriate time.
 
