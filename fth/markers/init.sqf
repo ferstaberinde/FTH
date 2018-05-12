@@ -23,6 +23,9 @@ if (!(side player in fth_mkrs_admin_sides)) then {
 	// Hides the markers used to place the parked vehicles
 	{_x setMarkerAlphaLocal 0} forEach fth_veh_civ_pv_mkrs;
 
+	// Hides the markers used to place the rebel camps
+	{_x setMarkerAlphaLocal 0} forEach fth_side_res_cp_mkrs;
+
 };
 
 // Wait N seconds (defined in FTH master config) and then start broadcasting markers from server and start the local markers script for admins:

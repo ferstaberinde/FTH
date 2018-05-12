@@ -26,9 +26,11 @@ fth_mkrs_enemy_local_delay = 180;
 The Resistance (Independent) is the AI-controlled side all player teams are fighting.
 
 | VARIABLE                      | DESCRIPTION
-|===============================|============          
+|===============================|============
 | fth_side_res_skill            | Default skill for units on the Resistance (Independent) side
-| fth_veh_supports_pat_classes  | Class of troops used for the patrols around the support vehicles
+| fth_side_res_cp_mkrs          | Names of the markers where rebel camps may spawn
+| fth_side_res_cp_classes       | Classes of buildings / tents used for the camps
+| fth_veh_supports_pat_classes  | Classes of troops used for the patrols around the support vehicles
 | fth_veh_supports_pat_min      | Minimum number of troops in a patrol
 | fth_veh_supports_pat_max      | Maximum number of troops in a patrol
 | fth_veh_supports_pat_gaps     | Distance (in meters) between waypoints of each patrol
@@ -37,6 +39,8 @@ The Resistance (Independent) is the AI-controlled side all player teams are figh
 */
 
 fth_side_res_skill = 0.5;
+fth_side_res_cp_mkrs = ["fth_mkr_cp_0","fth_mkr_cp_1","fth_mkr_cp_2","fth_mkr_cp_3","fth_mkr_cp_4","fth_mkr_cp_5","fth_mkr_cp_6","fth_mkr_cp_7","fth_mkr_cp_8","fth_mkr_cp_9","fth_mkr_cp_10","fth_mkr_cp_11","fth_mkr_cp_12","fth_mkr_cp_13","fth_mkr_cp_14"];
+fth_side_res_cp_classes = ["Land_BagBunker_01_large_green_F","Land_HBarrier_01_tower_green_F","Land_HBarrier_01_big_tower_green_F"];
 fth_veh_supports_pat_classes = ["I_C_Soldier_Para_3_F","I_C_Soldier_Para_7_F","I_C_Soldier_Bandit_2_F","I_C_Soldier_Bandit_4_F"];
 fth_veh_supports_pat_min = 2;
 fth_veh_supports_pat_max = 5;
@@ -60,7 +64,7 @@ The object is the vehicle all player teams are trying to capture.
 fth_veh_object_mkr = "fth_mkr_veh_object";
 fth_veh_object_class = "C_Truck_02_covered_F";
 fth_veh_object_crew_class = "I_C_Soldier_Para_3_F";
-fth_veh_object_wp_mkrs = ["fth_mkr_wp_0","fth_mkr_wp_1","fth_mkr_wp_2","fth_mkr_wp_3","fth_mkr_wp_4","fth_mkr_wp_5","fth_mkr_wp_6","fth_mkr_wp_7","fth_mkr_wp_8","fth_mkr_wp_9","fth_mkr_wp_10","fth_mkr_wp_11","fth_mkr_wp_12","fth_mkr_wp_13","fth_mkr_wp_14"];
+fth_veh_object_wp_mkrs = ["fth_mkr_wp_0","fth_mkr_wp_1","fth_mkr_wp_2","fth_mkr_wp_3","fth_mkr_wp_4","fth_mkr_wp_5","fth_mkr_wp_6","fth_mkr_wp_7","fth_mkr_wp_8","fth_mkr_wp_9","fth_mkr_wp_10","fth_mkr_wp_11","fth_mkr_wp_12","fth_mkr_wp_13","fth_mkr_wp_14","fth_mkr_wp_15","fth_mkr_wp_16","fth_mkr_wp_17","fth_mkr_wp_18","fth_mkr_wp_19","fth_mkr_wp_20","fth_mkr_wp_21","fth_mkr_wp_22","fth_mkr_wp_23","fth_mkr_wp_24"];
 fth_veh_object_wp_max_rad = 300;
 fth_veh_object_wp_timeout = [120,180,240];
 
@@ -111,7 +115,7 @@ fth_veh_res_classes = ["I_C_Offroad_02_LMG_F","I_G_Offroad_01_armed_F"];
 fth_veh_res_crew_classes = ["I_C_Soldier_Para_3_F","I_C_Soldier_Para_7_F","I_C_Soldier_Bandit_2_F","I_C_Soldier_Bandit_4_F"];
 fth_veh_civ_classes = ["C_Offroad_01_F","C_SUV_01_F","C_Van_01_box_F","C_Offroad_02_unarmed_F","C_Hatchback_01_F","C_Truck_02_covered_F"];
 fth_veh_civ_crew_classes = ["C_man_p_shorts_1_F","C_man_p_fugitive_F","C_man_polo_6_F","C_man_polo_5_F","C_man_polo_4_F","C_man_polo_1_F"];
-fth_veh_civ_pv_mkrs = ["fth_mkr_pv_0","fth_mkr_pv_1","fth_mkr_pv_2","fth_mkr_pv_3","fth_mkr_pv_4","fth_mkr_pv_5","fth_mkr_pv_6","fth_mkr_pv_7","fth_mkr_pv_8","fth_mkr_pv_9"];
+fth_veh_civ_pv_mkrs = ["fth_mkr_pv_0","fth_mkr_pv_1","fth_mkr_pv_2","fth_mkr_pv_3","fth_mkr_pv_4","fth_mkr_pv_5","fth_mkr_pv_6","fth_mkr_pv_7","fth_mkr_pv_8","fth_mkr_pv_9","fth_mkr_pv_10","fth_mkr_pv_11","fth_mkr_pv_12","fth_mkr_pv_13","fth_mkr_pv_14","fth_mkr_pv_15","fth_mkr_pv_16","fth_mkr_pv_17","fth_mkr_pv_18","fth_mkr_pv_19"];
 
 /* PLAYERS
 The groups, vehicle types and possible starting locations for players.
