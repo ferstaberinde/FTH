@@ -23,7 +23,11 @@ _locs_civ = _locs;
 // Initiate the creation of the military vehicles:
 _i = 0;
 {
-	null = [_x,"M",_i] execVM "fth\traffic\create_traffic.sqf";
+	if (_i mod 2 == 0) then {
+		null = [_x,"MT",_i] execVM "fth\traffic\create_traffic.sqf";
+	} else {
+		null = [_x,"MJ",_i] execVM "fth\traffic\create_traffic.sqf";
+	};
 	_i = _i + 1;
 } forEach _locs_mil;
 

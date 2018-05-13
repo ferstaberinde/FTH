@@ -3852,7 +3852,7 @@ class Mission
 			name="fth_mkr_pv_0";
 			text="PV 0";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=184;
 			atlOffset=-0.1727345;
 		};
@@ -3863,7 +3863,7 @@ class Mission
 			name="fth_mkr_pv_1";
 			text="PV 1";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=185;
 			atlOffset=-0.10525894;
 		};
@@ -3874,7 +3874,7 @@ class Mission
 			name="fth_mkr_pv_2";
 			text="PV 2";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=186;
 			atlOffset=4.7683716e-007;
 		};
@@ -3885,7 +3885,7 @@ class Mission
 			name="fth_mkr_pv_3";
 			text="PV 3";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=187;
 			atlOffset=-2.3251858;
 		};
@@ -3896,7 +3896,7 @@ class Mission
 			name="fth_mkr_pv_4";
 			text="PV 4";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=188;
 			atlOffset=-2.6852489;
 		};
@@ -3907,7 +3907,7 @@ class Mission
 			name="fth_mkr_pv_5";
 			text="PV 5";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=189;
 			atlOffset=-0.60556841;
 		};
@@ -3918,7 +3918,7 @@ class Mission
 			name="fth_mkr_pv_6";
 			text="PV 6";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=190;
 			atlOffset=-0.00041532516;
 		};
@@ -3929,7 +3929,7 @@ class Mission
 			name="fth_mkr_pv_7";
 			text="PV 7";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=191;
 			atlOffset=-0.19200182;
 		};
@@ -3940,7 +3940,7 @@ class Mission
 			name="fth_mkr_pv_8";
 			text="PV 8";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=192;
 			atlOffset=-0.33952093;
 		};
@@ -3951,7 +3951,7 @@ class Mission
 			name="fth_mkr_pv_9";
 			text="PV 9";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=193;
 			atlOffset=-0.09516716;
 		};
@@ -4085,7 +4085,7 @@ class Mission
 			name="fth_mkr_pv_10";
 			text="PV 10";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=204;
 		};
 		class Item87
@@ -4095,7 +4095,7 @@ class Mission
 			name="fth_mkr_pv_11";
 			text="PV 11";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=205;
 		};
 		class Item88
@@ -4105,7 +4105,7 @@ class Mission
 			name="fth_mkr_pv_12";
 			text="PV 12";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=206;
 			atlOffset=4.7683716e-007;
 		};
@@ -4116,7 +4116,7 @@ class Mission
 			name="fth_mkr_pv_13";
 			text="PV 13";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=207;
 		};
 		class Item90
@@ -4126,7 +4126,7 @@ class Mission
 			name="fth_mkr_pv_14";
 			text="PV 14";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=208;
 		};
 		class Item91
@@ -4136,7 +4136,7 @@ class Mission
 			name="fth_mkr_pv_15";
 			text="PV 15";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=209;
 		};
 		class Item92
@@ -4146,7 +4146,7 @@ class Mission
 			name="fth_mkr_pv_16";
 			text="PV 16";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=210;
 		};
 		class Item93
@@ -4156,7 +4156,7 @@ class Mission
 			name="fth_mkr_pv_17";
 			text="PV 17";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=211;
 			atlOffset=-4.7683716e-007;
 		};
@@ -4167,7 +4167,7 @@ class Mission
 			name="fth_mkr_pv_18";
 			text="PV 18";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=212;
 			atlOffset=-4.7683716e-007;
 		};
@@ -4178,7 +4178,7 @@ class Mission
 			name="fth_mkr_pv_19";
 			text="PV 19";
 			type="mil_triangle";
-			colorName="ColorBrown";
+			colorName="ColorCIV";
 			id=213;
 			atlOffset=-7.1525574e-006;
 		};

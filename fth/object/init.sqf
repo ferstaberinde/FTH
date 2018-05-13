@@ -30,4 +30,4 @@ fth_man_object_guard assignAsCargo fth_veh_object;
 fth_man_object_guard moveInCargo fth_veh_object;
 
 // Initiate the object movement script
-_nul = [fth_grp_object_crew,""] execVM "fth\object\movement.sqf";
+_nul = [fth_grp_object_crew,"","GREEN"] execVM "fth\object\movement.sqf";

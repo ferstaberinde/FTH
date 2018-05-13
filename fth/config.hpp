@@ -103,7 +103,8 @@ Civilian vehicles that drive around the island. And get car-jacked by players. T
 
 | VARIABLE                 | DESCRIPTION
 |==========================|============ 
-| fth_veh_res_classes      | Classes of vehicles used for the resistance vehicles
+| fth_veh_res_tech_classes | Classes of vehicles used for the resistance 'technical' vehicles
+| fth_veh_res_jeep_classes | Classes of vehicles used for the resistance 'jeep' vehicles
 | fth_veh_res_crew_classes | Class of crew used for the resistance vehicles
 | fth_veh_civ_classes      | Classes of vehicles used for the civilian vehicles
 | fth_veh_civ_crew_classes | Class of crew used for the civilian vehicles
@@ -111,7 +112,8 @@ Civilian vehicles that drive around the island. And get car-jacked by players. T
 
 */
 
-fth_veh_res_classes = ["I_C_Offroad_02_LMG_F","I_G_Offroad_01_armed_F"];
+fth_veh_res_tech_classes = ["I_C_Offroad_02_LMG_F","I_G_Offroad_01_armed_F"];
+fth_veh_res_jeep_classes = ["I_C_Offroad_02_unarmed_F"];
 fth_veh_res_crew_classes = ["I_C_Soldier_Para_3_F","I_C_Soldier_Para_7_F","I_C_Soldier_Bandit_2_F","I_C_Soldier_Bandit_4_F"];
 fth_veh_civ_classes = ["C_Offroad_01_F","C_SUV_01_F","C_Van_01_box_F","C_Offroad_02_unarmed_F","C_Hatchback_01_F","C_Truck_02_covered_F"];
 fth_veh_civ_crew_classes = ["C_man_p_shorts_1_F","C_man_p_fugitive_F","C_man_polo_6_F","C_man_polo_5_F","C_man_polo_4_F","C_man_polo_1_F"];
