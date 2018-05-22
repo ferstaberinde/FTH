@@ -22,6 +22,9 @@ switch (_side) do {
 	};
 };
 
+// Add unflip action
+[[_veh, ["Unflip Vehicle","fth\object\unflip.sqf",nil,0,true,false,"","",10]],"addAction",true,true] call BIS_fnc_MP;
+
 // Create the marker and ensure it is updated as the vehicle moves:
 _veh_mkrName = format ["%1_%2",_side,_number];
 _veh_mkr = createMarker [_veh_mkrName, getMarkerPos _wp_mkr];

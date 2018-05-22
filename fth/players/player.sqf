@@ -7,16 +7,16 @@ sleep 1;
 // Create the appropriate local markers:
 switch (side player) do { 
 	case west : {
-					null = ["west","colorBlue",fth_mkrs_local_delay] execVM "fth\markers\local_unit_markers.sqf";
-					null = ["east","colorRed",fth_mkrs_enemy_local_delay] execVM "fth\markers\local_unit_markers.sqf";
+					null = ["west","colorBlue",fth_mkrs_local_delay,fth_mkrs_local_update] execVM "fth\markers\local_unit_markers.sqf";
+					null = ["east","colorRed",fth_mkrs_enemy_local_delay,fth_mkrs_enemy_local_update] execVM "fth\markers\local_unit_markers.sqf";
 				}; 
 	case east : {
-					null = ["east","colorBlue",fth_mkrs_local_delay] execVM "fth\markers\local_unit_markers.sqf";
-					null = ["west","colorRed",fth_mkrs_enemy_local_delay] execVM "fth\markers\local_unit_markers.sqf";
+					null = ["east","colorBlue",fth_mkrs_local_delay,fth_mkrs_local_update] execVM "fth\markers\local_unit_markers.sqf";
+					null = ["west","colorRed",fth_mkrs_enemy_local_delay,fth_mkrs_enemy_local_update] execVM "fth\markers\local_unit_markers.sqf";
 				};
 	case resistance : {
-					null = ["east","colorRed",fth_mkrs_local_delay] execVM "fth\markers\local_unit_markers.sqf";
-					null = ["west","colorBlue",fth_mkrs_local_delay] execVM "fth\markers\local_unit_markers.sqf";
+					null = ["east","colorRed",fth_mkrs_local_delay,fth_mkrs_local_update] execVM "fth\markers\local_unit_markers.sqf";
+					null = ["west","colorBlue",fth_mkrs_local_delay,fth_mkrs_local_update] execVM "fth\markers\local_unit_markers.sqf";
 				}; 
 };
 

@@ -16,6 +16,9 @@ switch (_type) do {
 _veh = _veh_type createVehicle getMarkerPos _spt_mkr;
 _veh setDir (markerDir _spt_mkr);	
 
+// Add unflip action
+[[_veh, ["Unflip Vehicle","fth\object\unflip.sqf",nil,0,true,false,"","",10]],"addAction",true,true] call BIS_fnc_MP;
+
 // Update the label of the marker (globally) to indicate the type of vehicle:
 _text = format ["%1 %2",(markerText _spt_mkr),_type];
 _spt_mkr setMarkerText _text;

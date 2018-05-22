@@ -7,7 +7,8 @@ private ["_side","_units","_i","_mkr","_mkrName","_color","_mkrs","_refresh"];
 // Populate some local variable using variables passed to the script:
 _side = _this select 0;
 _color = _this select 1;
-_refresh = _this select 2;
+_delay = _this select 2;
+_refresh = _this select 3;
 _units = [];
 _mkrs = [];
 
@@ -18,7 +19,7 @@ switch (_side) do {
 };
 
 // Pause (this is especially for when this script is controlling enemy unit markers):
-sleep (_refresh * 2);
+sleep _delay;
 
 // Set up the markers
 _i = 0;

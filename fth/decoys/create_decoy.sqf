@@ -17,6 +17,9 @@ fth_mkrs_local = fth_mkrs_local + [[_decoy_mkr,_veh]];
 // Add inspection action
 [[_veh, ["Inspect",{hint "MISSION UPDATE\nThis is NOT the target vehicle!";},nil,0,true,false,"","",10]],"addAction",true,true] call BIS_fnc_MP;
 
+// Add unflip action
+[[_veh, ["Unflip Vehicle","fth\object\unflip.sqf",nil,0,true,false,"","",10]],"addAction",true,true] call BIS_fnc_MP;
+
 // Create a group for the crew of the object vehicle:
 _grp = createGroup resistance;
 

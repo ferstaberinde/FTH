@@ -10,7 +10,9 @@ A dynamic markers system is implemented in full for admins, and in restricted fo
 | fth_mkrs_admin_sides        | Sides that can see the admin markers (usually just "resistance")
 | fth_mkrs_delay              | Time (in seconds) before the markers system starts working
 | fth_mkrs_public_update      | Time (in seconds) between each public broadcast of fth_mkrs_local by the server
-| fth_mkrs_local_delay        | Time (in seconds) between each refresh of local markers (must be LESS than fth_mkrs_public_update)
+| fth_mkrs_local_delay        | Time (in seconds) before friendly unit markers begin to appear
+| fth_mkrs_local_update       | Time (in seconds) between each refresh of local markers (must be LESS than fth_mkrs_public_update)
+| fth_mkrs_enemy_local_delay  | Time (in seconds) before enemy unit markers begin to appear
 | fth_mkrs_enemy_local_delay  | Time (in seconds) between each refresh of local markers for ENEMY units (recommended at least 60)
 
 */
@@ -20,7 +22,9 @@ fth_mkrs_admin_sides = [resistance];
 fth_mkrs_delay = 15;
 fth_mkrs_public_update = 60;
 fth_mkrs_local_delay = 15;
-fth_mkrs_enemy_local_delay = 180;
+fth_mkrs_local_update = 15;
+fth_mkrs_enemy_local_delay = 900;
+fth_mkrs_enemy_local_update = 180;
 
 /* RESISTANCE
 The Resistance (Independent) is the AI-controlled side all player teams are fighting.
