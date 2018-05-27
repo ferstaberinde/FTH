@@ -4,16 +4,17 @@
 /* MARKERS
 A dynamic markers system is implemented in full for admins, and in restricted form for players.
 
-| VARIABLE                    | DESCRIPTION
-|=============================|============          
-| fth_mkrs_local              | Empty arrary that will be populated and used by the markers system (DO NOT EDIT)  
-| fth_mkrs_admin_sides        | Sides that can see the admin markers (usually just "resistance")
-| fth_mkrs_delay              | Time (in seconds) before the markers system starts working
-| fth_mkrs_public_update      | Time (in seconds) between each public broadcast of fth_mkrs_local by the server
-| fth_mkrs_local_delay        | Time (in seconds) before friendly unit markers begin to appear
-| fth_mkrs_local_update       | Time (in seconds) between each refresh of local markers (must be LESS than fth_mkrs_public_update)
-| fth_mkrs_enemy_local_delay  | Time (in seconds) before enemy unit markers begin to appear
-| fth_mkrs_enemy_local_delay  | Time (in seconds) between each refresh of local markers for ENEMY units (recommended at least 60)
+| VARIABLE                       | DESCRIPTION
+|================================|============          
+| fth_mkrs_local                 | Empty arrary that will be populated and used by the markers system (DO NOT EDIT)  
+| fth_mkrs_admin_sides           | Sides that can see the admin markers (usually just "resistance")
+| fth_mkrs_delay                 | Time (in seconds) before the markers system starts working
+| fth_mkrs_public_update         | Time (in seconds) between each public broadcast of fth_mkrs_local by the server
+| fth_mkrs_local_delay           | Time (in seconds) before friendly unit markers begin to appear
+| fth_mkrs_local_update          | Time (in seconds) between each refresh of local markers (must be LESS than fth_mkrs_public_update)
+| fth_mkrs_enemy_local_delay     | Time (in seconds) before enemy unit markers begin to appear
+| fth_mkrs_enemy_local_update    | Time (in seconds) between each refresh of local markers for ENEMY units (recommended at least 60)
+| fth_mkrs_enemy_local_decrement | Percentage of orginal value of fth_mkrs_enemy_local_update by which it decrements each loop (until equal to fth_mkrs_local_update)
 
 */
 
@@ -25,6 +26,7 @@ fth_mkrs_local_delay = 15;
 fth_mkrs_local_update = 15;
 fth_mkrs_enemy_local_delay = 900;
 fth_mkrs_enemy_local_update = 180;
+fth_mkrs_enemy_local_decrement = 0.025;
 
 /* RESISTANCE
 The Resistance (Independent) is the AI-controlled side all player teams are fighting.

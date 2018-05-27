@@ -44,6 +44,12 @@ while {true} do {
 		_entity_mkr setMarkerPosLocal (getPosATL _entity);
 	} forEach _mkrs;
 
+	// If the _refresh rate is longer than fth_mkrs_local_update, gradually decrement it by % set in fth_mkrs_enemy_local_decrement:
+	if (_refresh > fth_mkrs_local_update) then {
+		_refresh = _refresh - (fth_mkrs_enemy_local_update * fth_mkrs_enemy_local_decrement);
+		// hint format ["MARKERS UPDATE %1",_refresh]; // Used for testing only
+	};
+
 	sleep _refresh;
 
 };
